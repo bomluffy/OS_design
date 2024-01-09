@@ -1,0 +1,5 @@
+g++ kernel.c -shared -o kernel.dll -Wl,--out-implib,kernel.lib
+
+g++ T.c kernel.lib -o T.exe
+
+   
